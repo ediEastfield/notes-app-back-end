@@ -34,7 +34,7 @@ class notesHandler {
           status: 'fail',
           message: error.message,
         });
-        response.code(400);
+        response.code(error.statusCode);
         return response;
       }
 
